@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: practiceAEMProject - UI content
+Content-Package-Roots: /conf/practiceAEM,/content/dam/practiceAEM,/con
+ tent/practiceAEM
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: M1062275
+Implementation-Vendor-Id: com.mindtree
+Content-Package-Type: content
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_151
+Content-Package-Description: UI content package for practiceAEMProject
+Content-Package-Id: ord:practiceAEM.ui.content:0.0.1-SNAPSHOT
+

@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1614598963112
+Bundle-Category: ord
+Bundle-Description: "Core bundle for practiceAEMProject"
+Bundle-ManifestVersion: 2
+Bundle-Name: practiceAEMProject - Core
+Bundle-SymbolicName: practiceAEM.core
+Bundle-Version: 0.0.1.20210301114243111
+Created-By: 1.8.0_151 (Oracle Corporation)
+Export-Package: com.adobe.aem.guides.maven.core.filters;version="1.0";
+ uses:="javax.servlet",com.adobe.aem.guides.maven.core.listeners;versi
+ on="1.0";uses:="org.osgi.service.event",com.adobe.aem.guides.maven.co
+ re.models;version="1.0";uses:="javax.annotation,org.apache.sling.api.
+ resource,org.apache.sling.models.annotations,org.apache.sling.models.
+ annotations.injectorspecific",com.adobe.aem.guides.maven.core.schedul
+ ers;version="1.0",com.adobe.aem.guides.maven.core.servlets;version="1
+ .0";uses:="javax.servlet,org.apache.sling.api,org.apache.sling.api.se
+ rvlets"
+Import-Package: com.adobe.aem.guides.maven.core.filters;version="[1.0,
+ 2)",com.adobe.aem.guides.maven.core.listeners;version="[1.0,2)",com.a
+ dobe.aem.guides.maven.core.schedulers;version="[1.0,2)",com.adobe.aem
+ .guides.maven.core.servlets;version="[1.0,2)",com.day.cq.wcm.api;vers
+ ion="[1.27,2)",javax.annotation;version="[1.3,2)",javax.servlet;versi
+ on="[3.1,4)",org.apache.sling.api;version="[2.3,3)",org.apache.sling.
+ api.request;version="[2.4,3)",org.apache.sling.api.resource;version="
+ [2.11,3)",org.apache.sling.api.servlets;version="[2.2,3)",org.apache.
+ sling.models.annotations;version="[1.5,2)",org.apache.sling.models.an
+ notations.injectorspecific;version="[1.1,2)",org.apache.sling.setting
+ s;version="[1.3,2)",org.osgi.service.event;version="[1.3,2)",org.slf4
+ j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ,osgi.service;objectClass:List<String>="javax.servlet.Servlet",osgi.s
+ ervice;objectClass:List<String>="org.osgi.service.event.EventHandler"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.adobe.aem.guides.maven.core.filters.Lo
+ ggingFilter.xml,OSGI-INF/com.adobe.aem.guides.maven.core.listeners.Si
+ mpleResourceListener.xml,OSGI-INF/com.adobe.aem.guides.maven.core.sch
+ edulers.SimpleScheduledTask.xml,OSGI-INF/com.adobe.aem.guides.maven.c
+ ore.servlets.SimpleServlet.xml
+Sling-Model-Packages: com.adobe.aem.guides.maven.core.models
+Tool: Bnd-4.2.0.201903051501
+
